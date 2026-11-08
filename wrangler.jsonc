@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "levio-site",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-10-01",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "LEADS",
+      "id": "a3f9a4a342074ccbb11b5e064e5eb1f5"
+    }
+  ]
+}
